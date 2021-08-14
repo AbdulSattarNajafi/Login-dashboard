@@ -1,0 +1,300 @@
+/* -------Start styling Sidebar------- */
+
+.SidebarWidth {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 100vh;
+  overflow: auto;
+  background-color: var(--sidebar-bg);
+  transition: all .4s ease;
+  z-index: 999;
+}
+
+i.far,
+i.fas {
+  font-size: 20px;
+}
+
+.sidebar i.far {
+  font-size: 18px;
+}
+
+.dashboard i {
+  font-size: 18px;
+}
+.setting-icon i.far{
+  font-size: 20px;
+}
+
+.brand i {
+  background: -webkit-linear-gradient(#f6a704, #ff6b00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navIcon li a i:hover {
+  transition: 0.3s all ease;
+}
+
+.navIcon li a i:hover,
+.navIcon li a .active{
+  color: var(--orange-color);
+}
+
+.SidebarWidth::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+
+.SideberRemove {
+  width: 80px;
+  transition: all .4s ease;
+}
+.SideberRemove .sidebar{
+  padding: 0 18.5px;
+  width: 80px;
+  overflow-x: hidden;
+}
+.SideberRemove .sidebar .brand i{
+  font-size: 27px;
+}
+.sidebar {
+  width: 100%;
+  padding: 15px;
+}
+
+.sidebar .brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 16px;
+  height: 38px;
+  padding: 0 10px;
+}
+
+.sidebar .brand img {
+  width: 69%;
+}
+
+.sidebar .brand i {
+  font-size: 18px;
+  display: inline-flex;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.toggle-btn {
+  display: none;
+}
+
+.sidebar .sidebar_menu .dashboard {
+  padding: 9px 10px 9px 15px;
+  background-color: var(--home-btn-bg);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .sidebar_menu .dashboard i {
+  color: var(--primary);
+}
+
+.sidebar .sidebar_menu .dashboard p {
+  color: var(--text-color);
+  margin-bottom: 0px;
+  margin-left: 10px;
+  font-size: 15px;
+  line-height: 24px;
+  display: block;
+  max-height: 24px;
+  overflow: hidden;
+}
+
+.SubMenu span,
+.sidebar .sidebar_menu .dashboard span {
+  color: var(--white);
+  background-color: var(--primary);
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.SubMenu span{
+  color: var(--white-to-blue);
+  background-color: var(--primary-to-white);
+}
+
+.sidebar .FloorView {
+  display: flex;
+  align-items: center;
+  padding: 9px 15px;
+  background-color: var(--primary-to-white);
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.sidebar .FloorView i {
+  color: var(--white-to-blue);
+}
+
+.sidebar .FloorView p {
+  color: var(--white-to-blue);
+  margin-bottom: 0;
+  margin-left: 10px;
+  font-size: 15px;
+  line-height: 24px;
+  display: block;
+  max-height: 24px;
+  overflow: hidden;
+}
+
+.sidebar .accordionMain .accordion .accordion-item {
+  background-color: transparent;
+  border: none;
+}
+
+.sidebar .accordionMain .accordion .accordion-item .accordion-header .accordion-button {
+  color: var(--sidemenue-text);
+  background-color: transparent;
+  padding: 10px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 1px;
+  justify-content: center;
+  border: none;
+  box-shadow: none;
+}
+
+.sidebar .accordionMain .accordion .accordion-item .accordion-header .accordion-button:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.sidebar .accordionMain .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url('./../../images/Arrow.svg') !important;
+}
+
+.sidebar .accordionMain .accordion .accordion-item .accordion-header .accordion-button::after {
+  background-image: url('./../../images/Arrow.svg') !important;
+}
+
+.accordion-body {
+  padding:1rem .8rem 0 1.8rem;
+}
+
+.accordion-body .SubMenu {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 15px;
+  max-height: 22px;
+  min-height: 22px;
+  overflow: hidden;
+}
+
+.dots {
+  display: none;
+  transition: all .3s ease;
+}
+
+.SubMenu i {
+  color: var(--primary-to-white);
+}
+
+.setting-icon i{
+  color: var(--white);
+  font-size: 22px;
+}
+
+.SubMenu p {
+  color: var(--sidemenue-text);
+  margin-bottom: 0;
+  margin-left: 10px;
+  font-size: 15px;
+  line-height: 24px;
+  opacity: 1;
+  display: block;
+  max-height: 24px;
+  transition: all .2s ease;
+}
+.accordion-button .accordionButton{
+  min-height: 18px;
+  max-height: 18px;
+  overflow: hidden;
+}
+
+.SideberRemove .sidebar .accordionMain .accordion .accordion-item .accordion-header .accordion-button{
+  display: flex;
+  width: 43px;
+  overflow-x: hidden;
+}
+.SideberRemove .sidebar .accordionMain .accordion .accordion-item .accordion-header .accordion-button::after{
+  display: none;
+}
+.SideberRemove .sidebar .accordionMain .accordion .accordion-item .accordion-header .accordion-button .dots{
+  display: block;
+  padding: 0 .5rem;
+}
+
+.SideberRemove .sidebar .brand {
+  justify-content: center;
+}
+
+.SideberRemove .sidebar .accordionMain .accordion .accordion-item .accordion-header .dots {
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+
+.SideberRemove .sidebar .accordionMain .accordion .accordion-item .accordion-header .dots i {
+  font-size: 18px;
+  color: var(--dots-color) !important;
+}
+
+.SideberRemove .sidebar .sidebar_menu .dashboard,
+.SideberRemove .sidebar .sidebar_menu .FloorView {
+  padding: 9px 5px;
+  min-width: 35px;
+  min-height: 35px;
+  justify-content: center;
+}
+.SideberRemove .sidebar .sidebar_menu .dashboard i,
+.SideberRemove .sidebar .sidebar_menu .FloorView i{
+  margin-left: 10px;
+}
+.SideberRemove .sidebar .sidebar_menu .dashboard span{
+  display: none;
+}
+
+.SideberRemove .sidebar .accordionMain .accordion .accordion-item .accordion-collapse .accordion-body .SubMenu {
+  justify-content: flex-start;
+}
+
+.SideberRemove .sidebar .accordionMain .accordion .accordion-item .accordion-collapse .accordion-body {
+  padding: 1rem 0.7rem;
+  width: 43px;
+  overflow-x: hidden;
+}
+
+/* Media Queries */
+@media (max-width: 575.98px) {
+  .SidebarWidth{
+    width: 220px;
+  }
+  .SideberRemove{
+    width: 60px;
+  }
+  .SideberRemove .sidebar{
+    width: 60px;
+    padding: 0 10.5px;
+  }
+}

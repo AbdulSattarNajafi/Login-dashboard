@@ -1,0 +1,54 @@
+/* -------Stylig for Footer------ */
+.footer {
+  margin-top: 2rem;
+}
+.footer p {
+  color: var(--nav-text);
+  margin: 0;
+  padding: 15px 5px;
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+.made-by .far.fa-heart {
+  color: var(--red);
+  font-size: 20px;
+  margin-left: 3px;
+}
+.footer a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 6px;
+}
+.made-by {
+  text-align: right;
+}
+
+/* Media Queries */
+@media (max-width: 767.98px) {
+  .footer{
+    margin-top: 1.4rem;
+  }
+  .footer p{
+    font-size: 12px;
+    padding: 0;
+  }
+  .footer .row-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .made-by .far.fa-heart{
+    font-size: 14px;
+  }
+  .footer .copy_right{
+    order: 2;
+    padding: 0 .75rem;
+    text-align: center;
+  }
+  .footer .made-by{
+    order: 1;
+    padding: 0 .75rem;
+    text-align: center;
+  }
+}

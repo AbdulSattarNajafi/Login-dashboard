@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--===== Bootstrap File =====-->
+   <link rel="stylesheet" href="./dist/bootstrap/bootstrap.min.css">
+   <!--========= Custom CSS File ========-->
+   <link rel="stylesheet" href="./assets/css/app.css">
+   <title>Screen Saver</title>
+</head>
+<body>
+  <div class="container-fluid screen-saver-page" id="screen-saver">
+
+    <!-- ========= Main Content ========= -->
+    <div id="main-content-wrapper">
+
+      <!-- Content Header -->
+      <div id="content-header">
+        <div class="logo-wrapper">
+          <img class="img-fluid brand-logo" src="./assets/images/BrandLogo.png" data-darklogo="./assets/images/BrandLogo.png" data-lightlogo="./assets/images/light-logo.png" alt="Logo">
+        </div>
+        <div class="date-time-wrapper">
+          <p class="date-time"><span id="current_time">7:56 pm</span> - <span id="current_year">August 3rd, 2021</span></p>
+        </div>
+      </div>
+
+      <!-- Content Container -->
+      <div id="content-container">
+
+        <div class="live-floorview">
+          <div class="floorview-title">
+            <p class="floorview-subtitle">Live Floorview</p>
+          </div>
+
+          <div id="live-floor-cards-container" class="scrollbar">
+          <div id="cards-container">
+
+            <!-- Card 1 -->
+            <div class="card">
+               <div class="card-header d-flex justify-content-between align-items-center">
+                 <div class="game-id d-flex align-items-center">
+                   <div class="power-container">
+                     <i class="fas fa-power-off"></i>
+                   </div>
+                   <p class="game-name">Game #1</p>
+                 </div>
+                 <div class="game-img">
+                   <img class="img-fluid" src="./assets/images/slot-lg-icon.png" alt="slot image">
+                 </div>
+               </div>
+               <div class="card-line"></div>
+               <div class="card-number"><span>45</span></div>
+              <div class="card-body">
+                <div class="card-row d-flex justify-content-between">
+                  <p class="xs-semibold">Coin In</p>
+                  <div class="coins-box">
+                    <p class="xs-semibold">$20,000</p>
+                  </div>
+                </div>
+                <div class="card-row d-flex justify-content-between">
+                 <p class="xs-semibold">Coin Out</p>
+                 <div class="coins-box">
+                   <p class="xs-semibold">$20,000</p>
+                 </div>
+               </div>
+               <div class="card-row d-flex justify-content-between">
+                 <p class="xs-semibold">Bills In</p>
+                 <div class="coins-box">
+                   <p class="xs-semibold">$20,000</p>
+                 </div>
+               </div>
+               <div class="card-row d-flex justify-content-between">
+                 <p class="xs-semibold">Average Bet</p>
+                 <div class="coins-box">
+                   <p class="xs-semibold">$20,000</p>
+                 </div>
+               </div>
+               <div class="card-row d-flex justify-content-between">
+                 <p class="xs-semibold">Session Time</p>
+                 <div class="coins-box">
+                   <p class="xs-semibold">$20,000</p>
+                 </div>
+               </div>
+              </div>
+              <div class="card-line"></div>
+              <div class="card-footer d-flex justify-content-between align-items-center">
+                <p class="user-name">Player Name</p>
+                <img src="./assets/images/trueRewards.png" alt="TRue Rewards">
+              </div>
+            </div>
+ 
+            <!-- Card 2 -->
+            <div class="card">
+               <div class="card-header d-flex justify-content-between align-items-center">
+                 <div class="game-id d-flex align-items-center">
+                   <div class="power-container">
+                     <i class="fas fa-power-off"></i>
+                   </div>
+                   <p class="game-name">Game #2</p>
+                 </div>
+                 <div class="game-img">
+                   <img class="img-fluid" src="./assets/images/card-lg-icon.png" alt="cards icon">
+                 </div>
+               </div>
+               <div class="card-line"></div>
+               <div class="card-number"><span>45</span></div>
+              <div class="card-body">
+                <div class="card-row d-flex justify-content-between">
+                  <p class="xs-semibold">Coin In</p>
+                  <div class="coins-box">
+                    <p class="xs-semibold">$20,000</p>
+                  </div>
+                </div>
+                <div class="card-row d-flex justify-content-between">
+                 <p class="xs-semibold">Coin Out</p>
+                 <div class="coins-box">
+                   <p class="xs-semibold">$20,000</p>
+                 </div>
+               </div>
+               <div class="card-row d-flex justify-content-between">
+                 <p class="xs-semibold">Bills In</p>
+                 <div class="coins-box">
+                   <p class="xs-semibold">$20,000</p>
+                 </div>
+               </div>
+               <div class="card-row d-flex justify-content-between">
+                 <p class="xs-semibold">Average Bet</p>
+                 <div class="coins-box">
+                   <p class="xs-semibold">$20,000</p>
+                 </div>
+               </div>
+               <div class="card-row d-flex justify-content-between">
+                 <p class="xs-semibold">Session Time</p>
+                 <div class="coins-box">
+                   <p class="xs-semibold">$20,000</p>
+                 </div>
+               </div>
+              </div>
+              <div class="card-line"></div>
+              <div class="card-footer d-flex justify-content-center align-items-center">
+                <p class="user-name">Player Name</p>
+              </div>
+            </div>
+ 
+            <!-- Card 3 -->
+            <div class="card">
+             <div class="card-header d-flex justify-content-between align-items-center">
+               <div class="game-id d-flex align-items-center">
+                 <div class="power-container offline">
+                   <i class="fas fa-power-off"></i>
+                 </div>
+                 <p class="game-name">Game #3</p>
+               </div>
+               <div class="game-img">
+                 <img class="img-fluid" src="./assets/images/slot-lg-icon.png" alt="slot image">
+               </div>
+             </div>
+             <div class="card-line"></div>
+             <div class="card-number"><span>45</span></div>
+            <div class="card-body">
+              <div class="card-row d-flex justify-content-between">
+                <p class="xs-semibold">Coin In</p>
+                <div class="coins-box">
+                  <p class="xs-semibold">$20,000</p>
+                </div>
+              </div>
+              <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Coin Out</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Bills In</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Average Bet</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Session Time</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+            </div>
+            <div class="card-line"></div>
+            <div class="card-footer d-flex justify-content-center align-items-center">
+              <p class="user-name">Offline</p>
+            </div>
+          </div>
+ 
+            
+          <!-- Card 4 -->
+          <div class="card">
+           <div class="card-header d-flex justify-content-between align-items-center">
+             <div class="game-id d-flex align-items-center">
+               <div class="power-container">
+                 <i class="fas fa-power-off"></i>
+               </div>
+               <p class="game-name">Game #4</p>
+             </div>
+             <div class="game-img">
+               <img class="img-fluid" src="./assets/images/slot-lg-icon.png" alt="slot image">
+             </div>
+           </div>
+           <div class="card-line"></div>
+           <div class="card-number"><span>45</span></div>
+          <div class="card-body">
+            <div class="card-row d-flex justify-content-between">
+              <p class="xs-semibold">Coin In</p>
+              <div class="coins-box">
+                <p class="xs-semibold">$20,000</p>
+              </div>
+            </div>
+            <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Coin Out</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Bills In</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Average Bet</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Session Time</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+          </div>
+          <div class="card-line"></div>
+          <div class="card-footer d-flex justify-content-between align-items-center">
+           <p class="user-name">Player Name</p>
+           <img src="./assets/images/trueRewards.png" alt="TRue Rewards">
+         </div>
+        </div>
+ 
+        <!-- Card 5 -->
+        <div class="card">
+           <div class="card-header d-flex justify-content-between align-items-center">
+             <div class="game-id d-flex align-items-center">
+               <div class="power-container">
+                 <i class="fas fa-power-off"></i>
+               </div>
+               <p class="game-name">Game #5</p>
+             </div>
+             <div class="game-img">
+               <img class="img-fluid" src="./assets/images/card-lg-icon.png" alt="cards icon">
+             </div>
+           </div>
+           <div class="card-line"></div>
+           <div class="card-number"><span>45</span></div>
+          <div class="card-body">
+            <div class="card-row d-flex justify-content-between">
+              <p class="xs-semibold">Coin In</p>
+              <div class="coins-box">
+                <p class="xs-semibold">$20,000</p>
+              </div>
+            </div>
+            <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Coin Out</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Bills In</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Average Bet</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Session Time</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+          </div>
+          <div class="card-line"></div>
+          <div class="card-footer d-flex justify-content-center align-items-center">
+            <p class="user-name">Player Name</p>
+          </div>
+        </div>
+ 
+        <!-- Card 6 -->
+        <div class="card">
+         <div class="card-header d-flex justify-content-between align-items-center">
+           <div class="game-id d-flex align-items-center">
+             <div class="power-container">
+               <i class="fas fa-power-off"></i>
+             </div>
+             <p class="game-name">Game #6</p>
+           </div>
+           <div class="game-img">
+             <img class="img-fluid" src="./assets/images/slot-lg-icon.png" alt="slot image">
+           </div>
+         </div>
+         <div class="card-line"></div>
+         <div class="card-number"><span>45</span></div>
+        <div class="card-body">
+          <div class="card-row d-flex justify-content-between">
+            <p class="xs-semibold">Coin In</p>
+            <div class="coins-box">
+              <p class="xs-semibold">$20,000</p>
+            </div>
+          </div>
+          <div class="card-row d-flex justify-content-between">
+           <p class="xs-semibold">Coin Out</p>
+           <div class="coins-box">
+             <p class="xs-semibold">$20,000</p>
+           </div>
+         </div>
+         <div class="card-row d-flex justify-content-between">
+           <p class="xs-semibold">Bills In</p>
+           <div class="coins-box">
+             <p class="xs-semibold">$20,000</p>
+           </div>
+         </div>
+         <div class="card-row d-flex justify-content-between">
+           <p class="xs-semibold">Average Bet</p>
+           <div class="coins-box">
+             <p class="xs-semibold">$20,000</p>
+           </div>
+         </div>
+         <div class="card-row d-flex justify-content-between">
+           <p class="xs-semibold">Session Time</p>
+           <div class="coins-box">
+             <p class="xs-semibold">$20,000</p>
+           </div>
+         </div>
+        </div>
+        <div class="card-line"></div>
+        <div class="card-footer d-flex justify-content-center align-items-center">
+          <p class="user-name">Idle</p>
+        </div>
+      </div>
+            
+         <!-- Card 7 -->
+         <div class="card">
+           <div class="card-header d-flex justify-content-between align-items-center">
+             <div class="game-id d-flex align-items-center">
+               <div class="power-container">
+                 <i class="fas fa-power-off"></i>
+               </div>
+               <p class="game-name">Game #7</p>
+             </div>
+             <div class="game-img">
+               <img class="img-fluid" src="./assets/images/slot-lg-icon.png" alt="slot image">
+             </div>
+           </div>
+           <div class="card-line"></div>
+           <div class="card-number"><span>45</span></div>
+         <div class="card-body">
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Coin In</p>
+             <div class="coins-boxn">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Coin Out</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Bills In</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Average Bet</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Session Time</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+         </div>
+         <div class="card-line"></div>
+         <div class="card-footer d-flex justify-content-center align-items-center">
+           <p class="user-name">Player Name</p>
+         </div>
+       </div>
+ 
+       <!-- Card 8 -->
+       <div class="card">
+           <div class="card-header d-flex justify-content-between align-items-center">
+             <div class="game-id d-flex align-items-center">
+               <div class="power-container">
+                 <i class="fas fa-power-off"></i>
+               </div>
+               <p class="game-name">Game #8</p>
+             </div>
+             <div class="game-img">
+               <img class="img-fluid" src="./assets/images/card-lg-icon.png" alt="cards icon">
+             </div>
+           </div>
+           <div class="card-line"></div>
+           <div class="card-number"><span>45</span></div>
+         <div class="card-body">
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Coin In</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Coin Out</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Bills In</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Average Bet</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Session Time</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+         </div>
+         <div class="card-line"></div>
+         <div class="card-footer d-flex justify-content-between align-items-center">
+           <p class="user-name">Player Name</p>
+           <img src="./assets/images/trueRewards.png" alt="TRue Rewards">
+         </div>
+       </div>
+ 
+       <!-- Card 9 -->
+       <div class="card">
+         <div class="card-header d-flex justify-content-between align-items-center">
+           <div class="game-id d-flex align-items-center">
+             <div class="power-container">
+               <i class="fas fa-power-off"></i>
+             </div>
+             <p class="game-name">Game #9</p>
+           </div>
+           <div class="game-img">
+             <img class="img-fluid" src="./assets/images/slot-lg-icon.png" alt="slot image">
+           </div>
+         </div>
+         <div class="card-line"></div>
+         <div class="card-number"><span>45</span></div>
+       <div class="card-body">
+         <div class="card-row d-flex justify-content-between">
+           <p class="xs-semibold">Coin In</p>
+           <div class="coins-box">
+             <p class="xs-semibold">$20,000</p>
+           </div>
+         </div>
+         <div class="card-row d-flex justify-content-between">
+           <p class="xs-semibold">Coin Out</p>
+           <div class="coins-box">
+             <p class="xs-semibold">$20,000</p>
+           </div>
+         </div>
+         <div class="card-row d-flex justify-content-between">
+           <p class="xs-semibold">Bills In</p>
+           <div class="coins-box">
+             <p class="xs-semibold">$20,000</p>
+           </div>
+         </div>
+         <div class="card-row d-flex justify-content-between">
+           <p class="xs-semibold">Average Bet</p>
+           <div class="coins-box">
+             <p class="xs-semibold">$20,000</p>
+           </div>
+         </div>
+         <div class="card-row d-flex justify-content-between">
+           <p class="xs-semibold">Session Time</p>
+           <div class="coins-box">
+             <p class="xs-semibold">$20,000</p>
+           </div>
+         </div>
+       </div>
+       <div class="card-line"></div>
+       <div class="card-footer d-flex justify-content-center align-items-center">
+         <p class="user-name">Idle</p>
+       </div>
+     </div>
+            
+           <!-- Card 10 -->
+           <div class="card">
+             <div class="card-header d-flex justify-content-between align-items-center">
+               <div class="game-id d-flex align-items-center">
+                 <div class="power-container">
+                   <i class="fas fa-power-off"></i>
+                 </div>
+                 <p class="game-name">Game #10</p>
+               </div>
+               <div class="game-img">
+                 <img class="img-fluid" src="./assets/images/slot-lg-icon.png" alt="slot image">
+               </div>
+             </div>
+             <div class="card-line"></div>
+             <div class="card-number"><span>45</span></div>
+           <div class="card-body">
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Coin In</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Coin Out</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Bills In</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Average Bet</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Session Time</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+           </div>
+           <div class="card-line"></div>
+           <div class="card-footer d-flex justify-content-center align-items-center">
+             <p class="user-name">Player Name</p>
+           </div>
+           </div>
+ 
+           <!-- Card 11 -->
+           <div class="card">
+             <div class="card-header d-flex justify-content-between align-items-center">
+               <div class="game-id d-flex align-items-center">
+                 <div class="power-container">
+                   <i class="fas fa-power-off"></i>
+                 </div>
+                 <p class="game-name">Game #11</p>
+               </div>
+               <div class="game-img">
+                 <img class="img-fluid" src="./assets/images/card-lg-icon.png" alt="cards icon">
+               </div>
+             </div>
+             <div class="card-line"></div>
+             <div class="card-number"><span>45</span></div>
+           <div class="card-body">
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Coin In</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Coin Out</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Bills In</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Average Bet</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Session Time</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+           </div>
+           <div class="card-line"></div>
+           <div class="card-footer d-flex justify-content-center align-items-center">
+             <p class="user-name">Player Name</p>
+           </div>
+           </div>
+ 
+           <!-- Card 12 -->
+           <div class="card">
+           <div class="card-header d-flex justify-content-between align-items-center">
+             <div class="game-id d-flex align-items-center">
+               <div class="power-container">
+                 <i class="fas fa-power-off"></i>
+               </div>
+               <p class="game-name">Game #12</p>
+             </div>
+             <div class="game-img">
+               <img class="img-fluid" src="./assets/images/slot-lg-icon.png" alt="slot image">
+             </div>
+           </div>
+           <div class="card-line"></div>
+           <div class="card-number"><span>45</span></div>
+           <div class="card-body">
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Coin In</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Coin Out</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Bills In</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Average Bet</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           <div class="card-row d-flex justify-content-between">
+             <p class="xs-semibold">Session Time</p>
+             <div class="coins-box">
+               <p class="xs-semibold">$20,000</p>
+             </div>
+           </div>
+           </div>
+           <div class="card-line"></div>
+           <div class="card-footer d-flex justify-content-between align-items-center">
+             <p class="user-name">Player Name</p>
+             <img src="./assets/images/trueRewards.png" alt="TRue Rewards">
+           </div>
+           </div>
+                     
+           <!-- Card 13 -->
+           <div class="card">
+             <div class="card-header d-flex justify-content-between align-items-center">
+               <div class="game-id d-flex align-items-center">
+                 <div class="power-container">
+                   <i class="fas fa-power-off"></i>
+                 </div>
+                 <p class="game-name">Game #13</p>
+               </div>
+               <div class="game-img">
+                 <img class="img-fluid" src="./assets/images/slot-lg-icon.png" alt="slot image">
+               </div>
+             </div>
+             <div class="card-line"></div>
+             <div class="card-number"><span>45</span></div>
+           <div class="card-body">
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Coin In</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Coin Out</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Bills In</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Average Bet</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Session Time</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+           </div>
+           <div class="card-line"></div>
+           <div class="card-footer d-flex justify-content-between align-items-center">
+             <p class="user-name">Player Name</p>
+             <img src="./assets/images/trueRewards.png" alt="TRue Rewards">
+           </div>
+           </div>
+ 
+           <!-- Card 14 -->
+           <div class="card">
+             <div class="card-header d-flex justify-content-between align-items-center">
+               <div class="game-id d-flex align-items-center">
+                 <div class="power-container">
+                   <i class="fas fa-power-off"></i>
+                 </div>
+                 <p class="game-name">Game #14</p>
+               </div>
+               <div class="game-img">
+                 <img class="img-fluid" src="./assets/images/card-lg-icon.png" alt="cards icon">
+               </div>
+             </div>
+             <div class="card-line"></div>
+             <div class="card-number"><span>45</span></div>
+           <div class="card-body">
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Coin In</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Coin Out</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Bills In</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Average Bet</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+             <div class="card-row d-flex justify-content-between">
+               <p class="xs-semibold">Session Time</p>
+               <div class="coins-box">
+                 <p class="xs-semibold">$20,000</p>
+               </div>
+             </div>
+           </div>
+           <div class="card-line"></div>
+           <div class="card-footer d-flex justify-content-center align-items-center">
+             <p class="user-name">Player Name</p>
+           </div>
+           </div>
+           <!-- End of Cards -->
+
+        </div>
+      </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- ========= End Main Content ========= -->
+
+    <!-- ========= Work Station ========= -->
+    <div id="work-station" class="work-station">
+      <h2 class="vertical-text first-text">WORKSTATION LOCKED</h2>
+      <p class="vertical-text second-text">TAP ANYWHERE TO UNLOCK</p>
+    </div>
+    <!-- ========= End Work Station ========= -->
+
+  </div>
+
+  <!-- Adding this element to prevent bugs in js -->
+  <div class="d-none" id="darkmode-toggle">
+    <div class="circle"></div>
+  </div>
+  <div class="bg-image d-none"></div>
+  <!-- Bootstrap JS file -->
+  <script src="./dist/bootstrap/bootstrap.bundle.js"></script>
+  <!-- FontAwesome js file -->
+  <script src="./dist/fontawesome/fontawesome.js"></script>
+  <!-- Custom JS File -->
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/screen-saver.js"></script>
+  
+</body>
+</html>

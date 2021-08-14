@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--===== Bootstrap File =====-->
+   <link rel="stylesheet" href="./dist/bootstrap/bootstrap.min.css">
+   <!--========= Custom CSS File ========-->
+   <link rel="stylesheet" href="./assets/css/app.css">
+   <title>Pin</title>
+</head>
+<body>
+  <div class="container-fluid" id="page-wrapper">
+
+    <div class="logo-container">
+      <img class="img-fluid brand-logo" src="./assets/images/BrandLogo.png" data-darklogo="./assets/images/BrandLogo.png" data-lightlogo="./assets/images/light-logo.png" alt="Logo">
+    </div>
+
+    <!-- Adding this element to prevent bugs in js -->
+    <div class="d-none" id="darkmode-toggle">
+      <div class="circle"></div>
+    </div>
+
+    <div id="image-content">
+      <div class="main-imageContainer">
+        <img class="bg-image" src="./assets/images/forgot-password-bg.png" data-darkimg="./assets/images/forgot-password-bg.png" data-lightimg="./assets/images/forgot-password-light.png" alt="image">
+      </div>
+    </div>
+
+    <div id="form-content">
+      <div class="form-container">
+        <h6>Pin</h6>
+        <p>Please enter your 6 digit PIN to log into the system.</p>
+
+        <form class="pin-form">
+          <div class="inputs-container mb-3">
+            <span class="pin-input"></span>
+            <span class="pin-input"></span>
+            <span class="pin-input"></span>
+            <span class="pin-input"></span>
+            <span class="pin-input"></span>
+            <span class="pin-input"></span>
+            <!-- <input type="password" class="pin-input" maxlength="1" required>
+            <input type="password" class="pin-input" maxlength="1" required>
+            <input type="password" class="pin-input" maxlength="1" required>
+            <input type="password" class="pin-input" maxlength="1" required>
+            <input type="password" class="pin-input" maxlength="1" required>
+            <input type="password" class="pin-input" maxlength="1" required> -->
+          </div>
+          <div class="buttons-container">
+
+            <!-- buttons row 1 -->
+            <div class="buttons-row">
+              <button type="button" class="pin-btn number_btn" data-value="1">1</button>
+              <button type="button" class="pin-btn number_btn" data-value="2">2</button>
+              <button type="button" class="pin-btn number_btn" data-value="3">3</button>
+            </div>
+
+            <!-- buttons row 2 -->
+            <div class="buttons-row">
+              <button type="button" class="pin-btn number_btn" data-value="4">4</button>
+              <button type="button" class="pin-btn number_btn" data-value="5">5</button>
+              <button type="button" class="pin-btn number_btn" data-value="6">6</button>
+            </div>
+
+            <!-- buttons row 3 -->
+            <div class="buttons-row">
+              <button type="button" class="pin-btn number_btn" data-value="7">7</button>
+              <button type="button" class="pin-btn number_btn" data-value="8">8</button>
+              <button type="button" class="pin-btn number_btn" data-value="9">9</button>
+            </div>
+
+            <!-- buttons row 4 -->
+            <div class="buttons-row">
+              <button type="button" class="pin-btn sm-font-btn" id="detele_btn">DEL</button>
+              <button type="button" class="pin-btn number_btn" data-value="0">0</button>
+              <button type="button" class="pin-btn sm-font-btn" id="clear_btn">CLR</button>
+            </div>
+
+          </div>
+
+          <div class="mt-4 cancel-btn-wrapper text-center">
+            <button type="button" class="trans-btn cancel-btn">
+              <span class="cancel-btn-icon">
+                <i class="far fa-chevron-left"></i> 
+              </span>
+              Cancel
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS file -->
+  <script src="./dist/bootstrap/bootstrap.bundle.js"></script>
+  <!-- FontAwesome js file -->
+  <script src="./dist/fontawesome/fontawesome.js"></script>
+  <!-- Custom JS File -->
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/app.js"></script>
+  
+</body>
+</html>

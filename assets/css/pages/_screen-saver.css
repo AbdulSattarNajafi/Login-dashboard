@@ -1,0 +1,119 @@
+#screen-saver{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: var(--popup-header-bg);
+  padding: 0;
+  overflow: hidden;
+}
+
+#screen-saver #main-content-wrapper{
+  width: calc(100% - 113px);
+  height: 100%;
+}
+
+#content-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem .75rem;
+}
+
+
+#content-header .logo-wrapper{
+  width: 148px;
+  height: auto;
+}
+
+#content-header .date-time-wrapper .date-time{
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 400;
+  line-height: 21px;
+}
+
+#content-container{
+  position: relative;
+  width: 100%;
+  height: calc(100% - 74px);
+  margin: auto;
+}
+
+#content-container .live-floorview{
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: var(--light-dark);
+  border-radius: 6px;
+  box-shadow: var(--white-shadow);
+  animation: x 7s linear infinite;
+  transform: scale(.4);
+  opacity: .1;
+  transition: all .5s linear;
+}
+.live-floorview .floorview-title{
+  background-color: var(--black);
+  border-bottom: 1px solid var(--stroke-color);
+  border-radius: 6px 6px 0 0;
+  padding: .75rem 1rem;
+}
+.live-floorview .floorview-title .floorview-subtitle{
+  font-size: 1.125rem;
+  color: var(--text-color);
+}
+#content-container .live-floorview #live-floor-cards-container{
+  height: calc(100% - 45px);
+  overflow-y: auto;
+}
+
+/* ====== Styling for Workstation ====== */
+#screen-saver #work-station{
+  width: 113px;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: all .5s linear;
+}
+
+#work-station .first-text{
+  order: 2;
+  font-size: 3rem;
+  color: var(--white-to-blue);
+}
+
+#work-station .second-text{
+  order: 1;
+  font-size: 1.125rem;
+  color: var(--text-gray-100);
+  letter-spacing: 2px;
+}
+
+#work-station .vertical-text{
+  writing-mode: vertical-rl;
+}
+
+@keyframes x{
+  0%{
+    top: 0%;
+    left: 10%;
+  }
+  25%{
+    top: 10%;
+    left: 20%;
+  }
+  50%{
+    top: 20%;
+    left: 10%;
+  }
+  75%{
+    top: 10%;
+    left: 0%;
+  }
+  100%{
+    top: 0%;
+    left: 10%;
+  }
+}

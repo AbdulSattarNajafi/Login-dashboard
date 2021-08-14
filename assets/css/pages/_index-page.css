@@ -1,0 +1,198 @@
+#page-wrapper{
+  position: relative;
+  background: var(--popup-header-bg);
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+}
+#page-wrapper #image-content{
+  width: calc(100% - 484px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#image-content .main-imageContainer{
+  padding: 0 4rem;
+  opacity: .1;
+  transform: scale(.4);
+  transition: all .4s linear;
+}
+.main-imageContainer .bg-image{
+  width: 100%;
+  height: auto;
+}
+#page-wrapper .logo-container{
+  position: absolute;
+  top: 1rem;
+  left: .7rem;
+  width: 148px;
+  height: 38px;
+}
+#page-wrapper #form-content{
+  width: 484px;
+  background-color: var(--black);
+  padding: 0 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: all .4s linear;
+}
+#form-content .form-container .pin-form{
+  width: 100%;
+}
+#form-content .form-container h6{
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+#form-content .form-container p{
+  font-size: 14px;
+  color: var(--nav-text);
+  margin: 1rem 0;
+}
+.pin-form .inputs-container{
+  display: flex;
+  justify-content: center;
+  padding: 1.8rem 0;
+}
+.inputs-container .pin-input{
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--white-to-blue);
+  border-radius: 50%;
+  margin-right: .5rem;
+}
+.inputs-container .active{
+  background-color: var(--white-to-blue);
+}
+.inputs-container .pin-input:last-child{
+  margin-right: 0;
+}
+.pin-form .buttons-container{
+  padding: .5rem;
+}
+.buttons-container .buttons-row{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.1rem;
+}
+.buttons-row .pin-btn{
+  width: 72px;
+  height: 58px;
+  border: none;
+  outline: none;
+  background-color: var(--primary);
+  border-radius: 6px;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--white);
+  padding: .5rem 1rem;
+  margin-right: 1.1rem;
+}
+.buttons-row .pin-btn:last-child{
+  margin-right: 0;
+}
+.buttons-row .sm-font-btn{
+  font-size: 17px;
+}
+.cancel-btn-wrapper .cancel-btn{
+  font-size: 14px;
+  color: var(--primary);
+  padding: .3rem .75rem;
+}
+.cancel-btn-wrapper .cancel-btn .cancel-btn-icon{
+  margin-right: .4rem;
+}
+.cancel-btn-icon .fa-chevron-left{
+  font-size: 14px;
+}
+
+@media (max-width: 1199.98px) {
+
+  #page-wrapper #image-content{
+    width: calc(100% - 400px);
+  }
+
+  #page-wrapper #form-content{
+    width: 400px;
+    padding: 0 1rem;
+  }
+
+}
+
+@media (max-width: 991.98px) {
+
+  #page-wrapper #image-content{
+    width: calc(100% - 380px);
+  }
+
+  #image-content .main-imageContainer{
+    padding: 0 1.4rem;
+  }
+
+  #page-wrapper #form-content{
+    width: 380px;
+    padding: 0 1rem;
+  }
+
+  .buttons-row .pin-btn{
+    width: 60px;
+    height: 48px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: .5rem 1rem;
+  }
+
+  .buttons-row .sm-font-btn{
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  #page-wrapper{
+    flex-direction: column;
+  }
+  #page-wrapper #image-content{
+    width: 100%;
+  }
+  #page-wrapper .logo-container{
+    width: 120px;
+    height: auto;
+  }
+  #image-content .main-imageContainer{
+    width: 400px;
+    height: auto;
+    margin: auto;
+    padding: 4rem 2rem 1rem 2rem;
+  }
+  #page-wrapper #form-content{
+    width: 100%;
+    background: var(--popup-header-bg);
+    padding: 0 .75rem;
+  }
+  #form-content .form-container h6,
+  #form-content .form-container p{
+    color: var(--white);
+  }
+  .pin-form .inputs-container{
+    padding: .75rem 0;
+  }
+  .inputs-container .pin-input{
+    border-color: var(--white);
+  }
+  .pin-form .buttons-container{
+    padding: 0;
+  }
+  .buttons-row .pin-btn{
+    background-color: var(--primary-to-white);
+    color: var(--white-to-blue);
+  }
+  .cancel-btn-wrapper .cancel-btn{
+    color: var(--primary-to-white);
+  }
+}
