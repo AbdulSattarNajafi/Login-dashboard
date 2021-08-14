@@ -1,9 +1,9 @@
-@import './_variables.css';
-@import './_global.css';
-@import './_presets.css';
-@import './layouts/_side-bar.css';
-@import './layouts/_top-menu.css';
-@import './layouts/_footer.css';
+@import './variables.css';
+@import './global.css';
+@import './presets.css';
+@import './layouts/side-bar.css';
+@import './layouts/top-menu.css';
+@import './layouts/footer.css';
 @import './pages/index-page.css';
-@import './pages/_card-page.css';
-@import './pages/_screen-saver.css';
+@import './pages/card-page.css';
+@import './pages/screen-saver.css';
